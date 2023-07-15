@@ -80,7 +80,7 @@ class Exp_Informer(Exp_Basic):
             Data = Dataset_Pred
         else:
             shuffle_flag = True; drop_last = True; batch_size = args.batch_size; freq=args.freq
-        print(args.root_path+args.data_path)    
+        print(args.root_path+args.data_path,args.cols)    
         data_set = Data(
             root_path=args.root_path,
             data_path=args.data_path,
