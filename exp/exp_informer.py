@@ -59,6 +59,7 @@ class Exp_Informer(Exp_Basic):
 
     def _get_data(self, flag):
         args = self.args
+        print(args)
 
         data_dict = {
             'ETTmm':Dataset_ETT_month,
@@ -92,7 +93,6 @@ class Exp_Informer(Exp_Basic):
             freq=freq,
             cols=args.cols
         )
-        print(root_path, data_path, cols)
         print(flag, len(data_set))
         data_loader = DataLoader(
             data_set,
