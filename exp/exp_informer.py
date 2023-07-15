@@ -59,7 +59,6 @@ class Exp_Informer(Exp_Basic):
 
     def _get_data(self, flag):
         args = self.args
-        print(args)
 
         data_dict = {
             'ETTmm':Dataset_ETT_month,
@@ -81,6 +80,7 @@ class Exp_Informer(Exp_Basic):
             Data = Dataset_Pred
         else:
             shuffle_flag = True; drop_last = True; batch_size = args.batch_size; freq=args.freq
+        print(args.root_path+args.data_path)    
         data_set = Data(
             root_path=args.root_path,
             data_path=args.data_path,
