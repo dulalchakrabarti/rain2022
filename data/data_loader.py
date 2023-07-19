@@ -272,7 +272,7 @@ class Dataset_ETT_minute(Dataset):
 class Dataset_Custom(Dataset):
     def __init__(self, root_path, flag='train', size=None, 
                  features='M', data_path='rain22.csv', 
-                 target='Barmer', scale=True, inverse=False, timeenc=0, freq='m', cols=None):
+                 target='barmer', scale=True, inverse=False, timeenc=0, freq='m', cols=None):
         # size [seq_len, label_len, pred_len]
         # info
         if size == None:
